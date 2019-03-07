@@ -165,7 +165,6 @@ class Collection:
 				longestMatch = match;
 
 		return longestMatch;
-
 	
 	def __getMatchWithLongestOverlapForFragment(
 		self, fragment, fragmentIndex, prevOverlapLength):
@@ -203,7 +202,6 @@ class Collection:
 		self.__addFragment(match.getMerge())
 		self.__removeFragment(match.fragment1)
 		self.__removeFragment(match.fragment2)
-
 
 	def greedyMatchAndMerge(self):
 		"""Merge entire collection."""
